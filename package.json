@@ -6,7 +6,9 @@
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "netlify-cms": "^1.9.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -27,7 +29,7 @@
     "prettier": "^1.12.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://gitlab.com/jmhill/personal-site"
+    "type": "git",
+    "url": "https://gitlab.com/jmhill/personal-site"
   }
 }
