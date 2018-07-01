@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "@jmhill/personal-site",
+  "description": "Gatsby + Netlify-powered personal website",
+  "version": "0.0.0",
+  "author": "Justin Hill <justinmhill@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -10,7 +10,9 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "JAMstack",
+    "netlify"
   ],
   "license": "MIT",
   "scripts": {
@@ -26,6 +28,6 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url" : "https://gitlab.com/jmhill/personal-site"
   }
 }
