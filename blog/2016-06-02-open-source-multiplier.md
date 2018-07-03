@@ -1,15 +1,7 @@
 ---
-title: "Open Source, Man-Hour Multiplier Effect, and Implications for Educators"
-date: 2016-06-02
 path: open-source-for-educators
-tags:
-  - open source
-  - node
-  - web development
-  - open education resources
-
-comments: true
-published: true
+date: '2016-06-02'
+title: 'Open Source, Man-Hour Multiplier Effect, and Implications for Educators'
 ---
 
 I've been hard at work on revamping and sprucing up some of my personal projects, and neglecting my writing. So I apologize for the long read in advance, but this is a topic I've been thinking about for a while. Read on for some brief ruminations on lessons educators can learn from open source software communities!
