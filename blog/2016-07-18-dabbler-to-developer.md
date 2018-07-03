@@ -1,15 +1,7 @@
 ---
-title: "From Dabbler to Developer: Tips to Level-Up Self-Taught Programmers"
-date: 2016-07-18
 path: level-up-self-taught-programmers
-tags:
-  - open source
-  - node
-  - web development
-  - open education resources
-  - self-directed learning
-comments: true
-published: true
+date: '2016-07-18'
+title: 'From Dabbler to Developer: Tips to Level-Up Self-Taught Programmers'
 ---
 
 About a year ago, I decided that my journey as a self-taught programmer and developer was stalling out. I was becoming an expert at completing tutorials, but I didn't feel any closer to being comfortable starting and maintaining projects of my own. If you're a self-directed learner in the early phases of learning to code, read on for some helpful tips that you can use to break into the next level of growth.
