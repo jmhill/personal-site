@@ -1,10 +1,7 @@
 ---
-title: Organizing a Life of Learning and Action
-date: 2016-04-07
 path: organizing-learning-and-action
-tags: GTD productivity self-teaching personal-development todoist evernote
-comments: true
-published: true
+date: '2016-04-07'
+title: Organizing a Life of Learning and Action
 ---
 
 Do you ever feel like you have trouble keeping up with all of the great ideas, personal projects, and priority items that will help you achieve your goals? When you're trying to focus on your work, do you find your mind racing with random thoughts and to-dos? If so (or even if you're just looking for ways to become more "productive" and put your mind at ease), then this post is for you!
