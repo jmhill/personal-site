@@ -1,6 +1,7 @@
 ---
 title: "The Spider and the Librarian: A Self-Teaching Framework"
 date: 2016-04-21
+path: self-teaching-framework
 tags: GTD productivity self-teaching personal-development todoist evernote
 comments: true
 published: true

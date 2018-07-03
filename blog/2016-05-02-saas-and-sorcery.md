@@ -1,6 +1,7 @@
 ---
 title: "SaaS and Sorcery: What Game of Thrones and Silicon Valley Taught Me About Everyday Heroes"
 date: 2016-05-02
+path: saas-and-sorcery
 tags:
   - game of thrones
   - silicon valley

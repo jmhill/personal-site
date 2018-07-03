@@ -1,6 +1,7 @@
 ---
 title: Organizing a Life of Learning and Action
 date: 2016-04-07
+path: organizing-learning-and-action
 tags: GTD productivity self-teaching personal-development todoist evernote
 comments: true
 published: true

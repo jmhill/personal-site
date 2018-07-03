@@ -1,6 +1,7 @@
 ---
 title: "From Dabbler to Developer: Tips to Level-Up Self-Taught Programmers"
 date: 2016-07-18
+path: level-up-self-taught-programmers
 tags:
   - open source
   - node
@@ -31,7 +32,7 @@ No matter how you locate your mentor, there are several ways you can make the mo
 
 - Set up a short block of time every week or so to pair program, and work through a particularly difficult problem you're encountering on one of your projects. You can even do this remotely, thanks to wide assortment of collaborative code-editing platforms that are springing up (e.g., [Floobits](https://floobits.com/)).
 - Have your mentor act as "product manager": they can check in on your project every now and then, submit new feature requests, and comment on pull requests or code reviews.
-- Keep a shared Google doc or other shared resource that records helpful resources, articles, and other items of mutual interest. 
+- Keep a shared Google doc or other shared resource that records helpful resources, articles, and other items of mutual interest.
 
 ## Break complex problems down into reasonable units of work
 
@@ -43,7 +44,7 @@ If, like me, you're a fan of visualizing your workflow, there are several "kanba
 
 These tools will not only keep you more organized - they will also make it easier for other people to check out your work in progress and collaborate. Your mentor (and prospective employers) will thank you!
 
-Perhaps even more importantly, using these tools and breaking your work down into manageable chunks makes it easy to break through that feeling of not knowing where to start. Working on your projects becomes a "pull process" in which you just grab the next issue that needs to be worked on, create a new branch, and get to work. This is crucially important when you have limited time and need to be able to make progress on your personal projects whenever you can find a few extra minutes or hours.  
+Perhaps even more importantly, using these tools and breaking your work down into manageable chunks makes it easy to break through that feeling of not knowing where to start. Working on your projects becomes a "pull process" in which you just grab the next issue that needs to be worked on, create a new branch, and get to work. This is crucially important when you have limited time and need to be able to make progress on your personal projects whenever you can find a few extra minutes or hours.
 
 ## Emulate real project management and build processes
 
@@ -61,7 +62,7 @@ Those of us who are less design-minded are fortunate today in that we have a ple
 
 However, unless you want to become a designer, try not to get to wound up with making your project look perfect at first. Focus instead on acheiving the desired functionality. Once your project is behaving correctly, you can go back and get all of your styles looking spiffy.
 
-When I was first getting started, I always had a tendency to try and build out the front-end/UI and server-side application at the same time; this can be a big drag on productivity. Use tools like [postman](https://www.getpostman.com/) to interactively test your API endpoints without having to worry about hooking up your client app. 
+When I was first getting started, I always had a tendency to try and build out the front-end/UI and server-side application at the same time; this can be a big drag on productivity. Use tools like [postman](https://www.getpostman.com/) to interactively test your API endpoints without having to worry about hooking up your client app.
 
 ## Give test-driven/behavior-driven development a try
 

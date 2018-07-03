@@ -1,6 +1,7 @@
 ---
 title:  Lessons from My Learn-to-Code Journey
 date:   2016-04-01
+path: learn-to-code-journey
 tags: coding online-learning treehouse codeschool thinkful node.js portfolio
 published: true
 comments: true

@@ -1,6 +1,7 @@
 ---
 title: "Open Source, Man-Hour Multiplier Effect, and Implications for Educators"
 date: 2016-06-02
+path: open-source-for-educators
 tags:
   - open source
   - node
@@ -25,9 +26,9 @@ Without boring my less technically inclined readers with a bunch of details, the
 
 While it may sound like a fairly straightforward problem to solve, people who don't work regularly on front-end app development might be surprised at the underlying complexity: the style information for a page is typically stored in a CSS file that provides all the directions needed to make all the different elements on the page look nice and spiffy - so to complete your "above the fold" optimization, you are required to programatically determine which elements on the page appear above the fold, and insert the style information directly into your HTML so that it will render correctly as soon as the page loads.
 
-Fortunately, the web development community is full of smart people who solve problems like this every day. I typically use a tool called [Grunt](http://gruntjs.com/) to automate certain tasks during my development process. You can write your own tasks with Grunt, but the real immediate value comes from the huge ecosystem of plugins that other people have written, allowing you to drop pre-made tasks into your project right away with just a little configuration. 
+Fortunately, the web development community is full of smart people who solve problems like this every day. I typically use a tool called [Grunt](http://gruntjs.com/) to automate certain tasks during my development process. You can write your own tasks with Grunt, but the real immediate value comes from the huge ecosystem of plugins that other people have written, allowing you to drop pre-made tasks into your project right away with just a little configuration.
 
-And wouldn't you know it? There are [at least three](https://github.com/addyosmani/critical-path-css-tools) different Grunt plugins just sitting there, waiting to solve our "above the fold" problem. Some of these solutions have even been developed by software engineers at Google. Needless to say, I trust those dudes to solve the problem more effectively than I probably could on my own, particularly because this isn't a problem I really wanted to solve in the first place! I just wanted to build, for example, a website for a friend's nonprofit, or a landing page for an app. 
+And wouldn't you know it? There are [at least three](https://github.com/addyosmani/critical-path-css-tools) different Grunt plugins just sitting there, waiting to solve our "above the fold" problem. Some of these solutions have even been developed by software engineers at Google. Needless to say, I trust those dudes to solve the problem more effectively than I probably could on my own, particularly because this isn't a problem I really wanted to solve in the first place! I just wanted to build, for example, a website for a friend's nonprofit, or a landing page for an app.
 
 So, __why not stand on the shoulders of giants, borrow their solution, and focus on the real problem at hand?__ What we achieve by doing so is the realization of a beautiful spontaneous order, in which people are constantly building on the work of others, multiplying the impact of their individual man-hours of labor. Instead of just benefiting an individual project, the work of a developer can fuel the progress of thousands of other projects as well.
 
@@ -35,7 +36,7 @@ So, __why not stand on the shoulders of giants, borrow their solution, and focus
 
 Anybody who has taught in a K12 setting knows that being a teacher can be a lonely existence. Even though school systems are making some inroads when it comes to encouraging collaboration among their faculty, teachers tend to live on a bit of an island, isolated in their own classroom.
 
-In education and ed tech circles there is an increasing interest, however, in Open Education Resources (OER). The basic idea is that releasing curriculum materials under a less restrictive license (for instance, a [Creative Commons](https://creativecommons.org/) license that allows anybody to reproduce, alter/edit, and reuse your work) will make it easier for teachers and professors to share and collaborate, rather than relying on a binder full of lesson plans and worksheets or whatever other resources they have locked up in their individual classroom. For more info on OER, check out this [resource page](http://www.oeconsortium.org/info-center/topic/introduction-to-oer/). 
+In education and ed tech circles there is an increasing interest, however, in Open Education Resources (OER). The basic idea is that releasing curriculum materials under a less restrictive license (for instance, a [Creative Commons](https://creativecommons.org/) license that allows anybody to reproduce, alter/edit, and reuse your work) will make it easier for teachers and professors to share and collaborate, rather than relying on a binder full of lesson plans and worksheets or whatever other resources they have locked up in their individual classroom. For more info on OER, check out this [resource page](http://www.oeconsortium.org/info-center/topic/introduction-to-oer/).
 
 This is cool stuff - so why isn't use of OER more widespread already? Well, it's getting there, but I honestly think it's because tracking down OER is a bit of a chore.
 
@@ -47,7 +48,7 @@ Is it possible to have a "package manager" for curriculum materials - a tool tha
 
 One of the most crucial tools for working effectively on a software development team is a version control system, like git and [github](http://github.com). Keeping clear logs of how your files are changing, making it easy to revert to old versions as necessary, and showing who made what changes - these features save a lot of time and headaches.
 
-In the education space, teachers and professors usually only get exposure to lightweight version control via wiki-type applications. While it is indeed possible to collaborate effectively as a team using a wiki, it can still be a bit bewildering to a new user - and software development-oriented tools like git are even more esoteric. How can we lower the barrier of entry for teachers who want to collaborate on curriculum materials? 
+In the education space, teachers and professors usually only get exposure to lightweight version control via wiki-type applications. While it is indeed possible to collaborate effectively as a team using a wiki, it can still be a bit bewildering to a new user - and software development-oriented tools like git are even more esoteric. How can we lower the barrier of entry for teachers who want to collaborate on curriculum materials?
 
 There are few key features that teachers would need:
 
