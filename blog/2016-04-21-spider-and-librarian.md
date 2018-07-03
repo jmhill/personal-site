@@ -1,10 +1,7 @@
 ---
-title: "The Spider and the Librarian: A Self-Teaching Framework"
-date: 2016-04-21
 path: self-teaching-framework
-tags: GTD productivity self-teaching personal-development todoist evernote
-comments: true
-published: true
+date: '2016-04-21'
+title: 'The Spider and the Librarian: A Self-Teaching Framework'
 ---
 
 I had a huge response from friends and new readers who were curious to learn more about the productivity tools [I referenced in my last post]({% post_url 2016-04-07-organizing-learning-and-action %}). I thought it would be helpful to take a step back and describe the mental framework I use when charting a self-teaching path. To really make the most of the vast resources available to you out on the web, it's helpful to think of yourself as filling two distinct roles or personas: I call them "the spider" and "the librarian."
