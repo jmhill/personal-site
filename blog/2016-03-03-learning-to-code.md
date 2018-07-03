@@ -1,10 +1,7 @@
 ---
-title:  Lessons from My Learn-to-Code Journey
-date:   2016-04-01
 path: learn-to-code-journey
-tags: coding online-learning treehouse codeschool thinkful node.js portfolio
-published: true
-comments: true
+date: '2016-04-01'
+title: Lessons from My Learn-to-Code Journey
 ---
 
 Why write (or in your case, read) another blog post about learning to code? The last few years have seen an explosion in the amount of quality learning resources available to curious beginners. Free and subscription-based online learning communities, bootcamps (both in-person and online), mentorship/apprenticeship programs - the diversity of options can be overwhelming. It can be tempting to look for "silver bullet" solutions - and some of these solutions may even work for you and meet your needs! However, we have the great fortune of living in a time when learning materials targeted towards all types of students are accessible and relatively inexpensive, giving you the opportunity to tailor a learning sequence to your exact goals and ambitions. If this idea appeals to you, read on!
