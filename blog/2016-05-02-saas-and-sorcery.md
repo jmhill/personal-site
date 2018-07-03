@@ -1,15 +1,9 @@
 ---
-title: "SaaS and Sorcery: What Game of Thrones and Silicon Valley Taught Me About Everyday Heroes"
-date: 2016-05-02
 path: saas-and-sorcery
-tags:
-  - game of thrones
-  - silicon valley
-  - entrepreneurship
-  - personal-development
-
-comments: true
-published: true
+date: '2016-05-02'
+title: >-
+  SaaS and Sorcery: What Game of Thrones and Silicon Valley Taught Me About
+  Everyday Heroes
 ---
 
 ___***Warning:___ __Spoilers for Game of Thrones season 6 and Silicon Valley season 3 included!***__ Growing up, I was a big fan of fantasy and sci-fi novels. I loved stories about epic heroes who stood up against impossible odds, set against the backdrop of strange, foreign worlds. In the world of America circa 2016, entrepreneurs are sometimes considered to be our modern heroes. What does the hero's journey of entrepreneur look like, compared to their fictional fantasy counterparts? In about an hour and a half of television last Sunday night, HBO showed us.
