@@ -1,5 +1,5 @@
 ---
-path: open-source-for-educators
+path: open-source-multiplier
 date: '2016-06-02'
 title: 'Open Source, Man-Hour Multiplier Effect, and Implications for Educators'
 ---

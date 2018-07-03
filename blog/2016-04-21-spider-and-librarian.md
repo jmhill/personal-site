@@ -1,5 +1,5 @@
 ---
-path: self-teaching-framework
+path: spider-and-librarian
 date: '2016-04-21'
 title: 'The Spider and the Librarian: A Self-Teaching Framework'
 ---

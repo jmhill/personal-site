@@ -1,5 +1,5 @@
 ---
-path: level-up-self-taught-programmers
+path: dabbler-to-developer
 date: '2016-07-18'
 title: 'From Dabbler to Developer: Tips to Level-Up Self-Taught Programmers'
 ---

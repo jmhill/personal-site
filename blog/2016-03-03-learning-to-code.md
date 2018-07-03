@@ -1,5 +1,5 @@
 ---
-path: learn-to-code-journey
+path: learning-to-code
 date: '2016-04-01'
 title: Lessons from My Learn-to-Code Journey
 ---
