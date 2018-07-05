@@ -37,7 +37,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             frontmatter {
               path
-              date(formatString: "M/DD/YYYY")
+              date(formatString: "MM/DD/YYYY")
             }
             fields {
               slug
@@ -53,10 +53,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       // Extract all of the date information from the frontmatter
-      const date = new Date(node.frontmatter.date);
-      const year = date.getUTCFullYear();
-      const month = date.getUTCMonth() + 1;
-      const day = date.getUTCDate();
+      [month, day, year] = node.frontmatter.date.split('/');
 
       // Generate pages with date + slug paths
       createPage({
