@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/justinmhill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://justinmhill.com
+  * I am justinmhill (https://keybase.io/justinmhill) on keybase.
+  * I have a public key with fingerprint 5BDD 9568 24B9 92A4 2D4B  C0D2 2F63 8E18 5861 8B46
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019dd2c9927d1c460aa961e2179c991199e0ef51e0fe743a6889ec6239f772c6f90a",
+            "fingerprint": "5bdd956824b992a42d4bc0d22f638e1858618b46",
+            "host": "keybase.io",
+            "key_id": "2f638e1858618b46",
+            "kid": "01019dd2c9927d1c460aa961e2179c991199e0ef51e0fe743a6889ec6239f772c6f90a",
+            "uid": "3d56ddc7dfe921a69ea16d63f22cb819",
+            "username": "justinmhill"
+        },
+        "service": {
+            "hostname": "justinmhill.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1471484192,
+    "expire_in": 157680000,
+    "prev": "e81e8c4728913bb67fa2d0870d15df22b4bd4a2ed32c5979bbcc7c442df781d7",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMIuAnicrZJbSFRBGMfX7GJLdlXogmGHwh7UzsyenTmzD+I+pG5Glhd80NrOOTNH
+T+qedfesFqGJlATRQ0EbhVQY3RVju0dUSuJDaWCYBNqFikKjsCDKEpsj9VSPzcsw
+3/f/fvP/vpkHifEOZ1z/Y3lxjy8rGvewqzXiKL22KHW3oJp0l+DZLVSx6Y1VUxa2
+/FUGFTyCCERAKIUaIRBToElIVBSCAIMAEx4EgBAmMt0NmKgzLLkUJMuEaQi6iI4x
+1JBOREVIF3QjUMFCwZARsDjWrVJK3EiGksrBigSppGoihVBHLpkB2S0jIKsS4oWV
+Ztiu4OZUJcwyDZPH+ME/be8f+v/sOzKNc1E3olTDVGcEAgURpgBEkUuHUFNlQGxh
+mIUCSg3j6h2RsGUEaiqN6mqhIV3giTpDY/Zs7Wb+FmVqZg0nBEOmZWpmNU9WWlbQ
+Y9dau4K2uJ6p/t8Yv2oEKB8mL6hjobBhBgQP4ErNMmwukDCQZAkQmC6wnUEjxPyG
+rXBjJIt82dewOo5kMmCyJmEoE+BSVYR1BVJRxiIFbsr7UiWVSgpk1AU1N8FEVTUN
+axJ/Kh3LgGLBbqw2YAoewm0qFRwZNioCihUJMaGh+375TEec0zF71gz7kzmccxf+
++XqSL8HR4RsbXfF5dov3Rco67/eCnIqNXQe355YNnexIWN3d1epv+/n8cBSbo6u+
+WmnPLhZa73vXz5nRe2igLa/oyZm9VwYaw0tSik9k386PnXp6K3XgeObb1wXDnWnd
+U+b4+zsft6Hi/JI1Pl+dq+dUrDMyf7zt7Iq+kuWD2WN5iUmbX3/pa8zdan5suXB4
+Dzqyb7Dx3No4s+/A+fZ1k8dGhl/Fbvib4tszdq4s+zSZ9W7DVLS8/sO32i3O01mx
+aFVTzsSjlz9qSzYvO3q5NL45t2bTW+/SpKn84sICb7L3zciPu30v739wJt+LWUP9
+zc0Z4wPqRMaR74sijfujl4quLhi7iZPezcu7/gtX0kde
+=o1J4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/justinmhill
+
+==================================================================
+
