@@ -6,7 +6,7 @@ export const ContentBlock = (props) => {
   return (
       <div>
         <h2 className="content-subhead">{content.title}</h2>
-        <p>{content.body}</p>
+        <p className="post-description">{content.body}</p>
       </div>
   );
 };
