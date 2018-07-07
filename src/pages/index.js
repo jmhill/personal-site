@@ -3,7 +3,12 @@ import { ContentBlock } from '../components/ContentBlock.jsx';
 import { PostSummaryList } from '../components/PostSummaryList.jsx';
 
 const IndexPage = ({data}) => {
-  const content = { title: 'Testing', body: 'This is a test content block'};
+  const content = {
+    title: 'Welcome',
+    body: `
+    My name is Justin Hill and I am a tech enthusiast, web developer, and educator. Check out my recent blog posts below, or head over to the projects page to see what I'm working on.
+    `,
+  };
   const posts = data.allMarkdownRemark.edges.map(x => x.node);
 
   return (
