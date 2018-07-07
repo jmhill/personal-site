@@ -1,16 +1,19 @@
 import React from 'react'
 
 export default props => {
-  console.log(props)
   const { markdownRemark } = props.data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
+    <div>
+      <h2 className="content-subhead">Blog</h2>
+      <div className="post">
+        <header className="post-header">
+          <h1 className="post-title">{frontmatter.title}</h1>
+          <p className="post-meta">{frontmatter.date}</p>
+        </header>
+
+        <article
+          className="post-description"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
