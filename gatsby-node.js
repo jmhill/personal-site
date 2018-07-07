@@ -12,6 +12,13 @@ const { createFilePath } = require('gatsby-source-filesystem');
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `MarkdownRemark`) {
+    // pass in the collection name as a field
+    const parent = getNode(node.parent);
+    createNodeField({
+      node,
+      name: 'collection',
+      value: parent.sourceInstanceName
+    });
 
     // Get the filename slug
     const slug = createFilePath({ node, getNode, basePath: `pages` })
@@ -22,13 +29,21 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     });
 
     // Extract all of the date information from the frontmatter
-    const [ year, month, day ] = node.frontmatter.date.split('-');
-    const formattedPath = `/blog/${year}/${month}/${day}/${node.frontmatter.path}/`;
-    createNodeField({
-      node,
-      name: `path`,
-      value: formattedPath,
-    });
+    if (node.frontmatter && node.frontmatter.date) {
+      const [ year, month, day ] = node.frontmatter.date.split('-');
+      const formattedPath = `/blog/${year}/${month}/${day}/${node.frontmatter.path}/`;
+      createNodeField({
+        node,
+        name: `path`,
+        value: formattedPath,
+      });
+    } else {
+      createNodeField({
+        node,
+        name: 'path',
+        value: slug
+      });
+    }
   }
 };
 
@@ -39,20 +54,29 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allFile (
+        filter: {
+          sourceInstanceName: {
+            eq: "blog"
+          }
+        }
+      ){
         edges {
           node {
             id
-            frontmatter {
-              path
-              date(formatString: "MM/DD/YYYY")
-            }
-            fields {
-              path
-              slug
+            childMarkdownRemark {
+              id
+              fields {
+                slug
+                path
+              }
+              frontmatter {
+                title
+                path
+                date
+              }
+              excerpt
+              timeToRead
             }
           }
         }
@@ -63,13 +87,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allFile.edges.forEach(({ node }) => {
       // Generate pages with date + slug paths
+      const item = node.childMarkdownRemark;
       createPage({
-        path: node.fields.path,
+        path: item.fields.path,
         component: blogPostTemplate,
         context: {
-          slug: node.fields.slug,
+          slug: item.fields.slug,
         }, // additional data can be passed via context
       });
     });
