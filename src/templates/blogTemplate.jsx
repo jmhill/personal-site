@@ -1,8 +1,14 @@
 import React from 'react'
+import { DiscussionEmbed } from 'disqus-react'
 
 export default props => {
   const { markdownRemark } = props.data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  const disqusConfig = {
+    identifier: frontmatter.path,
+    title: frontmatter.title
+  };
+
   return (
     <div>
       <h2 className="content-subhead">Blog</h2>
@@ -17,6 +23,7 @@ export default props => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
+      <DiscussionEmbed shortname="justinmhill" config={disqusConfig} />
     </div>
   )
 }
