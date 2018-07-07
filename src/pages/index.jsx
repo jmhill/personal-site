@@ -20,6 +20,7 @@ export default IndexPage
 export const indexPageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
+      filter: { fields: { collection: { eq: "blog" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 5
     ) {
@@ -35,6 +36,7 @@ export const indexPageQuery = graphql`
           fields {
             slug
             path
+            collection
           }
         }
       }

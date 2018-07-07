@@ -12,6 +12,7 @@ export default BlogPage
 export const BlogPageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(
+      filter: { fields: { collection: { eq: "blog" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 100
     ) {
@@ -27,6 +28,7 @@ export const BlogPageQuery = graphql`
           fields {
             slug
             path
+            collection
           }
         }
       }
