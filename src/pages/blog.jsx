@@ -1,18 +1,13 @@
-import React from 'react';
-import { PostSummaryList } from '../components/PostSummaryList.jsx';
+import React from 'react'
+import { PostSummaryList } from '../components/PostSummaryList.jsx'
 
-const BlogPage = ({data}) => {
-  const posts = data.allMarkdownRemark.edges.map(x => x.node);
+const BlogPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges.map(x => x.node)
 
-  return (
-    <div>
-      <h2 className="content-subhead">Blog</h2>
-      <PostSummaryList posts={posts} />
-    </div>
-  );
-};
+  return <PostSummaryList title="blog" posts={posts} />
+}
 
-export default BlogPage;
+export default BlogPage
 
 export const BlogPageQuery = graphql`
   query BlogQuery {
@@ -37,4 +32,4 @@ export const BlogPageQuery = graphql`
       }
     }
   }
-`;
+`

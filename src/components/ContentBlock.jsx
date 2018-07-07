@@ -1,15 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-export const ContentBlock = (props) => {
-  let content = props.content;
-
-  return (
-      <div>
-        <h2 className="content-subhead">{content.title}</h2>
-        <p className="post-description">{content.body}</p>
-      </div>
-  );
-};
+export const ContentBlock = ({ title, children }) => (
+  <div>
+    <h2 className="content-subhead">{title}</h2>
+    <p className="post-description">{children}</p>
+  </div>
+)
 
 // ContentBlock.propTypes = {
 //   content: React.PropTypes.shape({

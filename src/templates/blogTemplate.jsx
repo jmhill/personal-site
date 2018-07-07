@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default (props) => {
-  console.log(props);
-  const { markdownRemark } = props.data; // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark;
+export default props => {
+  console.log(props)
+  const { markdownRemark } = props.data // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
       <div className="blog-post">
@@ -15,7 +15,7 @@ export default (props) => {
         />
       </div>
     </div>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -29,5 +29,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
-
+`
