@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
+import MailChimpSignup from '../components/MailChimpSignup'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -35,7 +36,7 @@ const Layout = ({ children, data }) => (
           </div>
 
           <div className="pure-u-1 pure-u-md-1-3">
-            {/* Right-hand side bar stuff goes here */}
+            <MailChimpSignup />
           </div>
         </div>
       </div>
