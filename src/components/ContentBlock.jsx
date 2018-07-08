@@ -3,7 +3,7 @@ import React from 'react'
 export const ContentBlock = ({ title, children }) => (
   <div>
     <h2 className="content-subhead">{title}</h2>
-    <p className="post-description">{children}</p>
+    <div className="post-description">{children}</div>
   </div>
 )
 

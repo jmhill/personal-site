@@ -6,7 +6,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <ContentBlock title="About Me">
-      <span dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </ContentBlock>
   )
 }
