@@ -26,6 +26,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.js*",
+    "prelint": "yarn format",
     "lint": "eslint --ext js,jsx src",
     "preserve": "yarn build",
     "serve": "gatsby serve",
