@@ -32,7 +32,7 @@ export const indexPageQuery = graphql`
             title
             date(formatString: "MM/DD/YYYY")
           }
-          excerpt
+          excerpt(pruneLength: 280)
           fields {
             slug
             path
