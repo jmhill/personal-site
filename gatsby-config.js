@@ -41,5 +41,62 @@ module.exports = {
         // exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
     },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { fields: { collection: { eq: "blog" } } }
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                  limit: 1000
+                ) {
+                  totalCount
+                  edges {
+                    node {
+                      frontmatter {
+                        title
+                        date(formatString: "MM/DD/YYYY")
+                      }
+                      excerpt(pruneLength: 280)
+                      fields {
+                        slug
+                        path
+                      }
+                      html
+                    }
+                  }
+                }
+              }
+            `,
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.path,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            output: '/feed.xml',
+          },
+        ],
+      },
+    },
   ],
 }
