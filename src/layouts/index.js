@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import NavBar from '../components/NavBar'
+import SiteFooter from '../components/SiteFooter';
 import MailChimpSignup from '../components/MailChimpSignup'
 
 const Layout = ({ children, data }) => (
@@ -40,6 +41,9 @@ const Layout = ({ children, data }) => (
           </div>
         </div>
       </div>
+      <div className="pure-u-1">
+        <SiteFooter contact={data.site.siteMetadata.contact} social={data.site.siteMetadata.social} />
+      </div>
     </div>
   </div>
 )
@@ -56,6 +60,14 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        contact {
+          email
+        }
+        social {
+          github
+          gitlab
+          twitter
+        }
       }
     }
   }
