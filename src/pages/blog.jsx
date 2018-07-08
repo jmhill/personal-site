@@ -1,5 +1,7 @@
 import React from 'react';
-import { PostSummaryList } from '../components/PostSummaryList.jsx';
+import PropTypes from 'prop-types';
+
+import PostSummaryList from '../components/PostSummaryList';
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(x => x.node);
@@ -9,6 +11,11 @@ const BlogPage = ({ data }) => {
 
 export default BlogPage;
 
+BlogPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.any,
+  }).isRequired,
+};
 export const BlogPageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(

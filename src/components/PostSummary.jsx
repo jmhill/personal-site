@@ -1,34 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const PostSummary = props => {
-  const post = props.post;
+export const PostSummary = ({ post }) => (
+  <section className="post">
+    <h2 className="post-title">
+      <a href={post.fields.path}>{post.frontmatter.title}</a>
+    </h2>
+    <p className="post-meta">{post.frontmatter.date}</p>
+    <div className="post-description">
+      {post.excerpt}
+      <a href={post.fields.path}> Read more...</a>
+    </div>
+  </section>
+);
 
-  return (
-    <section className="post">
-      <h2 className="post-title">
-        <a href={post.fields.path}>{post.frontmatter.title}</a>
-      </h2>
-      <p className="post-meta">{post.frontmatter.date}</p>
-      <div className="post-description">
-        {post.excerpt}
-        <a href={post.fields.path}> Read more...</a>
-      </div>
-    </section>
-  );
+PostSummary.propTypes = {
+  post: PropTypes.shape({
+    fields: PropTypes.shape({
+      path: PropTypes.string.isRequired,
+    }).isRequired,
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string,
+    }),
+    excerpt: PropTypes.string,
+  }).isRequired,
 };
 
-// function formatDate(dateString) {
-//   const date = new Date(dateString);
-//   const format = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
-//   return date.toLocaleDateString('en-US', format);
-// }
-
-// PostSummary.propTypes = {
-//   post: React.PropTypes.shape({
-//     title: React.PropTypes.string.isRequired,
-//     // url: React.PropTypes.string.isRequired,
-//     date: React.PropTypes.string,
-//     excerpt: React.PropTypes.string
-//   }),
-// };
+export default PostSummary;

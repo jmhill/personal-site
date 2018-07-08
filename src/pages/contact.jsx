@@ -1,6 +1,8 @@
 import React from 'react';
-import { ContentBlock } from '../components/ContentBlock.jsx';
-import ContactCard from '../components/ContactCard.jsx';
+import PropTypes from 'prop-types';
+
+import ContentBlock from '../components/ContentBlock';
+import ContactCard from '../components/ContactCard';
 
 const ContactPage = ({ data }) => {
   const { contact, social } = data.site.siteMetadata;
@@ -14,6 +16,12 @@ const ContactPage = ({ data }) => {
       <ContactCard header="Contact Details" contact={contact} social={social} />
     </React.Fragment>
   );
+};
+
+ContactPage.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.any,
+  }).isRequired,
 };
 
 export default ContactPage;

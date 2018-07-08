@@ -1,4 +1,5 @@
-const React = require('react');
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const NavBar = ({ title, tagline }) => (
   <div className="sidebar pure-u-1 pure-u-md-1-4">
@@ -35,4 +36,9 @@ const NavBar = ({ title, tagline }) => (
   </div>
 );
 
-module.exports = NavBar;
+NavBar.propTypes = {
+  title: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
+};
+
+export default NavBar;

@@ -1,6 +1,8 @@
 import React from 'react';
-import { ContentBlock } from '../components/ContentBlock.jsx';
-import { PostSummaryList } from '../components/PostSummaryList.jsx';
+import PropTypes from 'prop-types';
+
+import ContentBlock from '../components/ContentBlock';
+import PostSummaryList from '../components/PostSummaryList';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(x => x.node);
@@ -13,6 +15,12 @@ const IndexPage = ({ data }) => {
       <PostSummaryList title="Recent Posts" posts={posts} />
     </div>
   );
+};
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.any,
+  }).isRequired,
 };
 
 export default IndexPage;

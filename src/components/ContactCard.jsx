@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ContactCard = ({ header, contact, social }) => (
   <React.Fragment>
@@ -25,5 +26,17 @@ const ContactCard = ({ header, contact, social }) => (
     </ul>
   </React.Fragment>
 );
+
+ContactCard.propTypes = {
+  header: PropTypes.string.isRequired,
+  contact: PropTypes.shape({
+    phone: PropTypes.string,
+    email: PropTypes.string,
+  }).isRequired,
+  social: PropTypes.shape({
+    twitter: PropTypes.string,
+    linkedin: PropTypes.string,
+  }).isRequired,
+};
 
 export default ContactCard;

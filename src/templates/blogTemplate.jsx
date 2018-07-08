@@ -1,8 +1,12 @@
+/* eslint-disable react/no-danger */
+
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { DiscussionEmbed } from 'disqus-react';
 
-export default props => {
-  const { markdownRemark } = props.data; // data.markdownRemark holds our post data
+const BlogTemplate = ({ data }) => {
+  const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   const disqusConfig = {
     identifier: frontmatter.path,
@@ -27,6 +31,14 @@ export default props => {
     </div>
   );
 };
+
+BlogTemplate.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }).isRequired,
+};
+
+export default BlogTemplate;
 
 export const pageQuery = graphql`
   query BlogPostByPath($slug: String!) {

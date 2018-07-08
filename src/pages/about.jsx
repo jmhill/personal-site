@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ContentBlock } from '../components/ContentBlock';
+
+import ContentBlock from '../components/ContentBlock';
 
 const AboutPage = ({ data }) => {
   const { html } = data.allMarkdownRemark.edges[0].node;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SiteFooter = ({ contact, social }) => (
   <footer className="footer">
@@ -31,5 +32,16 @@ const SiteFooter = ({ contact, social }) => (
     </div>
   </footer>
 );
+
+SiteFooter.propTypes = {
+  contact: PropTypes.shape({
+    email: PropTypes.string,
+  }).isRequired,
+  social: PropTypes.shape({
+    gitlab: PropTypes.string,
+    github: PropTypes.string,
+    twitter: PropTypes.string,
+  }).isRequired,
+};
 
 export default SiteFooter;

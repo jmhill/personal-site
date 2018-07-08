@@ -1,13 +1,25 @@
 import React from 'react';
-import { PostSummary } from './PostSummary.jsx';
+import PropTypes from 'prop-types';
+import { PostSummary } from './PostSummary';
 
-export const PostSummaryList = props => {
-  const posts = props.posts;
+const PostSummaryList = ({ posts, title }) => (
+  <div>
+    <h2 className="content-subhead">{title}</h2>
+    {posts.map(post => <PostSummary key={post.id} post={post} />)}
+  </div>
+);
 
-  return (
-    <div>
-      <h2 className="content-subhead">{props.title}</h2>
-      {posts.map(post => <PostSummary key={post.id} post={post} />)}
-    </div>
-  );
+PostSummaryList.propTypes = {
+  title: PropTypes.string.isRequired,
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+    })
+  ),
 };
+
+PostSummaryList.defaultProps = {
+  posts: [],
+};
+
+export default PostSummaryList;
