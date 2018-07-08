@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PostSummary = props => {
-  var post = props.post;
+  const post = props.post;
 
   return (
     <section className="post">

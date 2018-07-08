@@ -1,30 +1,30 @@
 import React from 'react';
 
 const SiteFooter = ({ contact, social }) => (
-  <footer class="footer">
-    <div class="pure-menu pure-menu-horizontal">
+  <footer className="footer">
+    <div className="pure-menu pure-menu-horizontal">
       <ul>
-        <li class="pure-menu-item footer-item">
+        <li className="pure-menu-item footer-item">
           <a href={`mailto:${contact.email}`}>
-            <i class="fa fa-envelope" /> Email
+            <i className="fa fa-envelope" /> Email
           </a>
         </li>
 
-        <li class="pure-menu-item footer-item">
+        <li className="pure-menu-item footer-item">
           <a href={`https://gitlab.com/${social.gitlab}`}>
-            <i class="fa fa-gitlab" /> GitLab
+            <i className="fa fa-gitlab" /> GitLab
           </a>
         </li>
 
-        <li class="pure-menu-item footer-item">
+        <li className="pure-menu-item footer-item">
           <a href={`https://github.com/${social.github}`}>
-            <i class="fa fa-github" /> GitHub
+            <i className="fa fa-github" /> GitHub
           </a>
         </li>
 
-        <li class="pure-menu-item footer-item">
+        <li className="pure-menu-item footer-item">
           <a href={`https://twitter.com/${social.twitter}`}>
-            <i class="fa fa-twitter" /> Twitter
+            <i className="fa fa-twitter" /> Twitter
           </a>
         </li>
       </ul>
