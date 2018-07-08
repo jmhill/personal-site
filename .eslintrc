@@ -1,3 +1,20 @@
 {
-  "extends": "airbnb"
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "import/core-modules": [
+      "react",
+      "prop-types"
+    ]
+  },
+  "globals": {
+    "graphql": false
+  }
 }
