@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export const PostSummary = props => {
-  var post = props.post
+  var post = props.post;
 
   return (
     <section className="post">
@@ -14,8 +14,8 @@ export const PostSummary = props => {
         <a href={post.fields.path}> Read more...</a>
       </div>
     </section>
-  )
-}
+  );
+};
 
 // function formatDate(dateString) {
 //   const date = new Date(dateString);

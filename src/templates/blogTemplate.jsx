@@ -1,12 +1,12 @@
-import React from 'react'
-import { DiscussionEmbed } from 'disqus-react'
+import React from "react";
+import { DiscussionEmbed } from "disqus-react";
 
 export default props => {
-  const { markdownRemark } = props.data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = props.data; // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark;
   const disqusConfig = {
     identifier: frontmatter.path,
-    title: frontmatter.title
+    title: frontmatter.title,
   };
 
   return (
@@ -25,8 +25,8 @@ export default props => {
       </div>
       <DiscussionEmbed shortname="justinmhill" config={disqusConfig} />
     </div>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query BlogPostByPath($slug: String!) {
@@ -39,4 +39,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,17 +1,17 @@
-import React from 'react'
-import { ContentBlock } from '../components/ContentBlock.jsx'
+import React from "react";
+import { ContentBlock } from "../components/ContentBlock.jsx";
 
 const AboutPage = ({ data }) => {
-  const html = data.allMarkdownRemark.edges[0].node.html
+  const html = data.allMarkdownRemark.edges[0].node.html;
 
   return (
     <ContentBlock title="About Me">
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </ContentBlock>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const AboutPageQuery = graphql`
   query AboutPage {
@@ -23,4 +23,4 @@ export const AboutPageQuery = graphql`
       }
     }
   }
-`
+`;

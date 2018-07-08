@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const embed = `
 <!-- Begin MailChimp Signup Form -->
@@ -21,11 +21,10 @@ const embed = `
 </div>
 
 <!--End mc_embed_signup-->
-`
+`;
 
 const MailChimpSignup = () => (
-  <span dangerouslySetInnerHTML={{ __html: embed }}>
-  </span>
+  <span dangerouslySetInnerHTML={{ __html: embed }} />
 );
 
 export default MailChimpSignup;

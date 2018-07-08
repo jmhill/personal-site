@@ -1,14 +1,12 @@
-const React = require('react')
+const React = require("react");
 
-const NavBar = ({title, tagline}) => (
+const NavBar = ({ title, tagline }) => (
   <div className="sidebar pure-u-1 pure-u-md-1-4">
     <header className="header">
       <h1 className="brand-title">
         <a href="/">{title}</a>
       </h1>
-      <h2 className="brand-tagline">
-        {tagline}
-      </h2>
+      <h2 className="brand-tagline">{tagline}</h2>
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item">
@@ -35,6 +33,6 @@ const NavBar = ({title, tagline}) => (
       </nav>
     </header>
   </div>
-)
+);
 
-module.exports = NavBar
+module.exports = NavBar;

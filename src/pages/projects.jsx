@@ -1,5 +1,5 @@
-import React from 'react'
-import { ContentBlock } from '../components/ContentBlock';
+import React from "react";
+import { ContentBlock } from "../components/ContentBlock";
 
 const ProjectsPage = () => (
   <ContentBlock title="Projects">
