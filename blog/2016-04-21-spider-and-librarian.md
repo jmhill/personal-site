@@ -3,8 +3,7 @@ path: spider-and-librarian
 date: '2016-04-21'
 title: 'The Spider and the Librarian: A Self-Teaching Framework'
 ---
-
-I had a huge response from friends and new readers who were curious to learn more about the productivity tools [I referenced in my last post]({% post_url 2016-04-07-organizing-learning-and-action %}). I thought it would be helpful to take a step back and describe the mental framework I use when charting a self-teaching path. To really make the most of the vast resources available to you out on the web, it's helpful to think of yourself as filling two distinct roles or personas: I call them "the spider" and "the librarian."
+I had a huge response from friends and new readers who were curious to learn more about the productivity tools I referenced in [my last post](/blog/2016/04/07/organizing-learning-and-action/). I thought it would be helpful to take a step back and describe the mental framework I use when charting a self-teaching path. To really make the most of the vast resources available to you out on the web, it's helpful to think of yourself as filling two distinct roles or personas: I call them "the spider" and "the librarian."
 
 ## The Spider: Being a Human Web-Crawler
 
@@ -50,17 +49,14 @@ There are a few features of the web-clipper that have earned Evernote a permanen
 
 1. Rather than just saving a link, the web-clipper actually copies over the page into your notebook. That way, if the site you are referencing disappears or they move the link, you'll still have your copy.
 2. Evernote has apps for all sorts of platforms, so you can refer back to your captured articles right on your iPhone or Android phone.
-3. __Here's the coolest feature:__ When you install the Evernote web-clipper extension in your browser, it will insert a cool little box on the right side of the page _whenever you do a Google search_ - with links to your saved notes and clipped articles related to your search! This effectively integrates your normal behavior (searching for stuff on Google) with your personally curated store of reference materials! Check out the screen shot below to see what I mean:
+3. **Here's the coolest feature:** When you install the Evernote web-clipper extension in your browser, it will insert a cool little box on the right side of the page _whenever you do a Google search_ - with links to your saved notes and clipped articles related to your search! This effectively integrates your normal behavior (searching for stuff on Google) with your personally curated store of reference materials! Check out the screen shot below to see what I mean:
 
 ![Justin's Todoist]({{ site.baseurl }}/assets/evernote-search.png)
 
 How cool is that?
 
-There are a few other "reference tools" that you could use instead of Evernote, depending on your needs - and some of them even have a similar ability to plop your reference material right into your Google searches. [Kifi][kifi] and [Declara][declara] are two examples you might want to check out.
+There are a few other "reference tools" that you could use instead of Evernote, depending on your needs - and some of them even have a similar ability to plop your reference material right into your Google searches. [Kifi](https://www.kifi.com/) and [Declara](https://declara.com/) are two examples you might want to check out.
 
 ## Go Forth and Conquer
 
 Hopefully, this post has been useful for you as you find the best way to achieve your self-teaching goals. As I've said before, the sheer volume of valuable information out there on the web can be overwhelming. But as the old saying goes, the best way to eat an elephant is one bite at a time. Just keep seeding your inbox with interesting concepts and resources to explore - and then make sure you save the useful stuff in a way so that you can effortlessly find it when you need it. Good luck! Drop a comment below if you have questions or other recommendations for getting organized, or shoot me a message on Twitter.
-
-[kifi]: https://www.kifi.com/
-[declara]: https://declara.com/
