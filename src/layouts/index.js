@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import NavBar from '../components/NavBar'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import NavBar from '../components/NavBar';
 import SiteFooter from '../components/SiteFooter';
-import MailChimpSignup from '../components/MailChimpSignup'
+import MailChimpSignup from '../components/MailChimpSignup';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -33,7 +33,9 @@ const Layout = ({ children, data }) => (
         <div className="pure-g">
           {/* Main view area of page */}
           <div className="pure-u-1 pure-u-md-2-3">
-            <div className="reading-area">{children()}</div>
+            <div className="reading-area">
+              {children()}
+            </div>
           </div>
 
           <div className="pure-u-1 pure-u-md-1-3">
@@ -46,13 +48,13 @@ const Layout = ({ children, data }) => (
       </div>
     </div>
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -71,4 +73,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
