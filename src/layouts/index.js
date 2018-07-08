@@ -25,7 +25,7 @@ const Layout = ({ children, data }) => (
     <div className="layout pure-g">
       {/* Navbar has style info held internally for now, hangs out on left side of the screen
       when in medium sized or higher iewports, shoots up to the top on small/phone size */}
-      <NavBar />
+      <NavBar title={data.site.siteMetadata.title} tagline={data.site.siteMetadata.description} />
 
       {/* The rest of the area to the right/below the navbar (depending on media query) goes here */}
       <div className="content pure-u-1 pure-u-md-3-4">
@@ -55,6 +55,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }
