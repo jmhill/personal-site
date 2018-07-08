@@ -3,6 +3,16 @@ module.exports = {
     title: 'Justin Hill',
     description: "software development, education, technology",
     siteUrl: "http://justinmhill.com",
+    contact: {
+      phone: "1-571-357-5760",
+      email: "justinmhill@gmail.com",
+    },
+    social: {
+      twitter: "justinmhill",
+      github: "jmhill",
+      gitlab: "jmhill",
+      linkedin: "hilljustin"
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',
