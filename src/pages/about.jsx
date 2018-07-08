@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ContentBlock } from '../components/ContentBlock';
 
 const AboutPage = ({ data }) => {
@@ -10,6 +11,12 @@ const AboutPage = ({ data }) => {
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </ContentBlock>
   );
+};
+
+AboutPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.any,
+  }).isRequired,
 };
 
 export default AboutPage;
