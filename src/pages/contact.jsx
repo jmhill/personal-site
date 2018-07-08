@@ -1,6 +1,6 @@
-import React from "react";
-import { ContentBlock } from "../components/ContentBlock.jsx";
-import ContactCard from "../components/ContactCard.jsx";
+import React from 'react';
+import { ContentBlock } from '../components/ContentBlock.jsx';
+import ContactCard from '../components/ContactCard.jsx';
 
 const ContactPage = ({ data }) => {
   const { contact, social } = data.site.siteMetadata;

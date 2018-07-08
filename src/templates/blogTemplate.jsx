@@ -1,5 +1,5 @@
-import React from "react";
-import { DiscussionEmbed } from "disqus-react";
+import React from 'react';
+import { DiscussionEmbed } from 'disqus-react';
 
 export default props => {
   const { markdownRemark } = props.data; // data.markdownRemark holds our post data

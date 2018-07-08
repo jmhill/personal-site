@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import NavBar from "../components/NavBar";
-import SiteFooter from "../components/SiteFooter";
-import MailChimpSignup from "../components/MailChimpSignup";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import NavBar from '../components/NavBar';
+import SiteFooter from '../components/SiteFooter';
+import MailChimpSignup from '../components/MailChimpSignup';
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" },
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { rel: "stylesheet", href: "/css/pure-min.css" },
-        { rel: "stylesheet", href: "/css/grids-responsive-min.css" },
-        { rel: "stylesheet", href: "/css/blog.css" },
+        { rel: 'stylesheet', href: '/css/pure-min.css' },
+        { rel: 'stylesheet', href: '/css/grids-responsive-min.css' },
+        { rel: 'stylesheet', href: '/css/blog.css' },
         {
-          rel: "stylesheet",
-          href: "/css/font-awesome/font-awesome-4.6.1/css/font-awesome.min.css",
+          rel: 'stylesheet',
+          href: '/css/font-awesome/font-awesome-4.6.1/css/font-awesome.min.css',
         },
       ]}
     />

@@ -1,5 +1,5 @@
-import React from "react";
-import { PostSummary } from "./PostSummary.jsx";
+import React from 'react';
+import { PostSummary } from './PostSummary.jsx';
 
 export const PostSummaryList = props => {
   let posts = props.posts;

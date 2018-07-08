@@ -1,5 +1,5 @@
-import React from "react";
-import { PostSummaryList } from "../components/PostSummaryList.jsx";
+import React from 'react';
+import { PostSummaryList } from '../components/PostSummaryList.jsx';
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(x => x.node);

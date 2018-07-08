@@ -1,4 +1,4 @@
-const React = require("react");
+const React = require('react');
 
 const NavBar = ({ title, tagline }) => (
   <div className="sidebar pure-u-1 pure-u-md-1-4">

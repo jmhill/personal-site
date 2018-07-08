@@ -1,6 +1,6 @@
-import React from "react";
-import { ContentBlock } from "../components/ContentBlock.jsx";
-import { PostSummaryList } from "../components/PostSummaryList.jsx";
+import React from 'react';
+import { ContentBlock } from '../components/ContentBlock.jsx';
+import { PostSummaryList } from '../components/PostSummaryList.jsx';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(x => x.node);
