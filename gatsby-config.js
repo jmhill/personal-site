@@ -19,6 +19,11 @@ module.exports = {
         path: `${__dirname}/src/content`
       }
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        "excerpt_separator": '<!-- break -->'
+      }
+    },
   ],
 }
