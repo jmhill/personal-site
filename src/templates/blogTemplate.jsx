@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
-
 import React from 'react';
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import { DiscussionEmbed } from 'disqus-react';
@@ -15,6 +15,9 @@ const BlogTemplate = ({ data }) => {
 
   return (
     <div>
+      <Helmet>
+        <title>{frontmatter.title}</title>
+      </Helmet>
       <h2 className="content-subhead">Blog</h2>
       <div className="post">
         <header className="post-header">

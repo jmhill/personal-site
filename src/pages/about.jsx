@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
 import ContentBlock from '../components/ContentBlock';
 
 const AboutPage = ({ data }) => {
   const { html } = data.allMarkdownRemark.edges[0].node;
+  const { title } = data.site.siteMetadata;
 
   return (
-    <ContentBlock title="About Me">
-      {/* eslint-disable-next-line react/no-danger */}
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </ContentBlock>
+    <React.Fragment>
+      <Helmet>
+        <title>{title} | About</title>
+      </Helmet>
+      <ContentBlock title="About Me">
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </ContentBlock>
+    </React.Fragment>
   );
 };
 
@@ -29,6 +36,11 @@ export const AboutPageQuery = graphql`
         node {
           html
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

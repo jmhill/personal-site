@@ -1,12 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
 import PostSummaryList from '../components/PostSummaryList';
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(x => x.node);
+  const { title } = data.site.siteMetadata;
 
-  return <PostSummaryList title="blog" posts={posts} />;
+  return (
+    <React.Fragment>
+      <Helmet>
+        <title>{title} | Blog</title>
+      </Helmet>
+      <PostSummaryList title="blog" posts={posts} />;
+    </React.Fragment>
+  );
 };
 
 export default BlogPage;
@@ -38,6 +47,11 @@ export const BlogPageQuery = graphql`
             collection
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
