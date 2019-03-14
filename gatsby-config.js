@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: 'Justin Hill',
-    description: "software development, education, technology",
-    siteUrl: "http://justinmhill.com",
+    description: 'software development, education, technology',
+    siteUrl: 'http://justinmhill.com',
     contact: {
-      phone: "1-571-357-5760",
-      email: "contact@justinmhill.com",
+      phone: '1-571-357-5760',
+      email: 'justinmhill@gmail.com',
     },
     social: {
-      twitter: "justinmhill",
-      github: "jmhill",
-      gitlab: "jmhill",
-      linkedin: "hilljustin"
-    }
+      twitter: 'justinmhill',
+      github: 'jmhill',
+      gitlab: 'jmhill',
+      linkedin: 'hilljustin',
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -28,19 +28,19 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: `${__dirname}/src/content`
-      }
+        path: `${__dirname}/src/content`,
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        "excerpt_separator": '<!-- break -->'
-      }
+        excerpt_separator: '<!-- break -->',
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-65534409-1",
+        trackingId: 'UA-65534409-1',
         // Puts tracking script in the head instead of the body
         head: true,
         // Setting this parameter is optional
@@ -99,9 +99,9 @@ module.exports = {
                   description: edge.node.excerpt,
                   url: site.siteMetadata.siteUrl + edge.node.fields.path,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.path,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                });
+              });
             },
             output: '/feed.xml',
           },
@@ -109,4 +109,4 @@ module.exports = {
       },
     },
   ],
-}
+};
