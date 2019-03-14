@@ -1,0 +1,3 @@
+# Redirect domain aliases to primary domain
+https://justinmhill.com/* https://jmhill.dev/:splat 301!
+https://www.justinmhill.com/* https://jmhill.dev/:splat 301!
