@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: 'http://justinmhill.com',
     contact: {
       phone: '1-571-357-5760',
-      email: 'justinmhill@gmail.com',
+      email: 'justin@jmhill.dev',
     },
     social: {
       twitter: 'justinmhill',
