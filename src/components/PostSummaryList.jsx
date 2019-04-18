@@ -5,7 +5,9 @@ import { PostSummary } from './PostSummary';
 const PostSummaryList = ({ posts, title }) => (
   <div>
     <h2 className="content-subhead">{title}</h2>
-    {posts.map(post => <PostSummary key={post.id} post={post} />)}
+    {posts.map(post => (
+      <PostSummary key={post.id} post={post} />
+    ))}
   </div>
 );
 
