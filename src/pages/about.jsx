@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import ContentBlock from '../components/ContentBlock';
+import Gravatar from '../components/Gravatar';
 
 const AboutPage = ({ data }) => {
   const { html } = data.allMarkdownRemark.edges[0].node;
@@ -14,6 +15,7 @@ const AboutPage = ({ data }) => {
         <title>{title} | About</title>
       </Helmet>
       <ContentBlock title="About Me">
+        <Gravatar email="justinmhill@gmail.com" />
         {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ContentBlock>
