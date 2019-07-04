@@ -1,33 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import SiteFooterItem from './SiteFooterItem';
+
 const SiteFooter = ({ contact, social }) => (
   <footer className="footer">
     <div className="pure-menu pure-menu-horizontal">
       <ul>
-        <li className="pure-menu-item footer-item">
-          <a href={`mailto:${contact.email}`}>
-            <i className="fa fa-envelope" /> Email
-          </a>
-        </li>
-
-        <li className="pure-menu-item footer-item">
-          <a href={`https://gitlab.com/${social.gitlab}`}>
-            <i className="fa fa-gitlab" /> GitLab
-          </a>
-        </li>
-
-        <li className="pure-menu-item footer-item">
-          <a href={`https://github.com/${social.github}`}>
-            <i className="fa fa-github" /> GitHub
-          </a>
-        </li>
-
-        <li className="pure-menu-item footer-item">
-          <a href={`https://twitter.com/${social.twitter}`}>
-            <i className="fa fa-twitter" /> Twitter
-          </a>
-        </li>
+        <SiteFooterItem
+          linkAddress={`mailto:${contact.email}`}
+          faClass="envelope"
+        >
+          Email
+        </SiteFooterItem>
+        <SiteFooterItem
+          linkAddress={`https://gitlab.com/${social.gitlab}`}
+          faClass="gitlab"
+        >
+          GitLab
+        </SiteFooterItem>
+        <SiteFooterItem
+          linkAddress={`https://github.com/${social.github}`}
+          faClass="github"
+        >
+          GitHub
+        </SiteFooterItem>
+        <SiteFooterItem
+          linkAddress={`https://twitter.com/${social.twitter}`}
+          faClass="twitter"
+        >
+          Twitter
+        </SiteFooterItem>
       </ul>
     </div>
   </footer>
