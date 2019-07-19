@@ -5,6 +5,12 @@ import Helmet from 'react-helmet';
 import ContentBlock from '../components/ContentBlock';
 import Gravatar from '../components/Gravatar';
 
+// TODO: center gravatar image
+const flexContainer = {
+  display: 'flex',
+  justifyContent: 'center',
+};
+
 const AboutPage = ({ data }) => {
   const { html } = data.allMarkdownRemark.edges[0].node;
   const { title } = data.site.siteMetadata;
@@ -15,7 +21,11 @@ const AboutPage = ({ data }) => {
         <title>{title} | About</title>
       </Helmet>
       <ContentBlock title="About Me">
-        <Gravatar email="justinmhill@gmail.com" />
+        <div style={flexContainer}>
+          <div>
+            <Gravatar email="justinmhill@gmail.com" />
+          </div>
+        </div>
         {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ContentBlock>
