@@ -23,7 +23,7 @@ const AboutPage = ({ data }) => {
       <ContentBlock title="About Me">
         <div style={flexContainer}>
           <div>
-            <Gravatar email="justinmhill@gmail.com" />
+            <Gravatar email="justinmhill@gmail.com" shape="circle" />
           </div>
         </div>
         {/* eslint-disable-next-line react/no-danger */}
