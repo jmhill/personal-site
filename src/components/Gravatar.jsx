@@ -14,13 +14,9 @@ const imageStyles = shape => {
   return styleObject;
 };
 
-// TODO:
-// 1. provide option to choose image size
-// 2. provide option to make square or circle - DONE
-// 3. Check on fallback image option (or just collapse if image not available?)
-const Gravatar = ({ email, shape }) => {
+const Gravatar = ({ email, shape, size }) => {
   const emailHash = hash.update(email).digest('hex');
-  const gravatarUrl = `https://www.gravatar.com/avatar/${emailHash}`;
+  const gravatarUrl = `https://www.gravatar.com/avatar/${emailHash}?size=${size}`;
 
   return (
     <img
@@ -34,10 +30,12 @@ const Gravatar = ({ email, shape }) => {
 Gravatar.propTypes = {
   email: PropTypes.string.isRequired,
   shape: PropTypes.oneOf(['square', 'circle']),
+  size: PropTypes.number,
 };
 
 Gravatar.defaultProps = {
   shape: 'square',
+  size: 80,
 };
 
 export default Gravatar;
