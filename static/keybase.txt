@@ -67,3 +67,64 @@ View my publicly-auditable identity here: https://keybase.io/justinmhill
 
 ==================================================================
 
+==================================================================
+https://keybase.io/justinmhill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://justinmhill.com
+  * I am justinmhill (https://keybase.io/justinmhill) on keybase.
+  * I have a public key with fingerprint 5BDD 9568 24B9 92A4 2D4B  C0D2 2F63 8E18 5861 8B46
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01019dd2c9927d1c460aa961e2179c991199e0ef51e0fe743a6889ec6239f772c6f90a",
+      "host": "keybase.io",
+      "kid": "0120904d92f4ff9e90cb7f5fad3f165153df6d4bcfa94e61d3315a73575abcaf0fc20a",
+      "uid": "3d56ddc7dfe921a69ea16d63f22cb819",
+      "username": "justinmhill"
+    },
+    "merkle_root": {
+      "ctime": 1569284215,
+      "hash": "a8afe17cc32c8769d730c4984a19b7106ba6d8b64f3e47124aef40305b652568ab324b4676d3a104b13012e4488e331c83e61a011d503d5c943647dc10465abb",
+      "hash_meta": "67601032033bf7b6307de530bb85380e1cf17e8d14509f4128a511da1fd3fa84",
+      "seqno": 7712383
+    },
+    "service": {
+      "entropy": "5S1yCff1WdhBOVzcmrF23k1I",
+      "hostname": "jmhill.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1569284225,
+  "expire_in": 504576000,
+  "prev": "8abb5492154a55d1cdc939062f559840695b69bc63f89545041184c7100d4a05",
+  "seqno": 35,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgkE2S9P+ekMt/X60/FlFT321Lz6lOYdMxWnNXWryvD8IKp3BheWxvYWTESpcCI8QgirtUkhVKVdHNyTkGL1WYQGlbabxj+JVFBBGExxANSgXEIGfxda0KQw/8joWdxNiwINlCmiilPgQQAC8H6rjMudTYAgHCo3NpZ8RA1IBnp+3z8+rkAkMOLAGXEtF22nd3YTQtkNcpaRw74b6UnGffWi8LzKnyhRgKgBUF/4Of9mwxQisjPknQC03+B6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKP8McmwtcyZyEQBubg6nbpxCr564J+DjY8lUNI+xpQQo3RhZ80CAqd2ZXJzaW9uAQ==
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/justinmhill
+
+==================================================================
