@@ -3,7 +3,7 @@ path: forbear-resenting-injuries
 date: '2019-12-06'
 title: '"Forbear resenting injuries so much as you think they deserve"'
 ---
-I'll keep this post short and sweet for once. I've written before about Benjamin Franklin's 13 virtues, particular his concept of resolution (see [here](https://jmhill.dev/blog/2019/03/13/resolution-of-the-day/). Lately, however, another of Franklin's virtues has been occupying my mind: moderation.
+I'll keep this post short and sweet for once. I've written before about Benjamin Franklin's 13 virtues, particular his concept of resolution (see [here](https://jmhill.dev/blog/2019/03/13/resolution-of-the-day/)). Lately, however, another of Franklin's virtues has been occupying my mind: moderation.
 
 Franklin's described moderation thus:
 
